@@ -26,7 +26,8 @@ Document
 
 This tree then can then be parsed with all kind of plugins that can be build on top of this platform.
 
-As a first use case a generator is implemented, that can turn the DAG-Graph into a XMI-Model of Requirements.
+As a first use case a generator is implemented, that can turn the DAG-Graph into a XMI-Model of Requirements. This XMI-Model is stored as `*.pmt`-File which can be viewed with our PMT-Tool:  (Download link here: http://www.validas.de/en/tools/)
+
 Currently under Development is: 
 * a DoorsNext interface that can turn those parsed Documents into DOORS Requirements)
 * an Interface that can be trained to understand the model of a sentence and will turn it into a relational ontology. On top of that we will do all kind of semantic analyses which can:
