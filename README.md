@@ -32,3 +32,9 @@ Currently under Development is:
   * check Documents in consistency of meanings, double declaration, abiguities, contradictions and so forth
   * Requirement to SYSML-Models to be used for code generation
   * Spam-Bots, Fake-News, and much more use cases possible...
+
+---
+## Releases / Downloads
+---
+
+Go to Releases: [DOWNLOAD](https://github.com/validas/NLX/releases>)
