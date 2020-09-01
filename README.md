@@ -2,6 +2,7 @@
 
 this software, (which is currently in prototype state) represents an extendable platform for all kinds of natural language processing. Core of this software builds a DSL generated with the XText Framework. This DSL can turn text of natural language documents into a DAG tree of the document content. It creates a Tree from:
 
+```
 Document
 |
 +-Paragraph
@@ -20,6 +21,7 @@ Document
 | | +-Sentence Chain
 | | | + ...
 | +-Table
+```
 
 This tree then can then be parsed with all kind of plugins that can be build on top of this platform.
 
