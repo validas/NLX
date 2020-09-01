@@ -1,4 +1,5 @@
 # NLX - Natural Language Platform
+![splash image](https://raw.githubusercontent.com/validas/NLX/master/img/splash.jpg "splash image")
 
 this software, (which is currently in prototype state) represents an extendable platform for all kinds of natural language processing. Core of this software builds a DSL generated with the XText Framework. This DSL can turn text of natural language documents into a DAG tree of the document content. It creates a Tree from:
 
@@ -38,3 +39,6 @@ Currently under Development is:
 ---
 
 Go to Releases: [DOWNLOAD](https://github.com/validas/NLX/releases>)
+
+---
+![Poster](https://raw.githubusercontent.com/validas/NLX/master/img/Preview.jpg)
