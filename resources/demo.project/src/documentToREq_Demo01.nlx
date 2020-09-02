@@ -1,0 +1,50 @@
+Introduction
+
+This is a chapterless introduction to demonstrate the model generation of the NLX-Tool
+You can put any general Infomation here, even a CONTENT LIST
+
+CONTENT
+
+1.0 First Main Chapter.......................... Page 1
+1.1 First Sub Chapter........................... Page 3
+1.1.1 First Sub Sub Chapter..................... Page 4
+2.0 Second Main Chapter......................... Page 5
+
+1.0 First Main Chapter 
+
+This Paragraph will be rendered into the first Main Capter Node of the Requirement Model. Paragraphs can contain all 
+Sorts of text like URLs: http://mydomain.com/subdirectory/rest or email.adresses@Emailer.com 
+
+It can even hold a list:
+1.) Item 1
+2.) Item 2
+3.) Item 3
+4.) Asf.
+
+Even bullet lists with indentation are supported
+
+	* One point
+	* Second point
+
+1.1 First Sub Chapter
+
+That's the first subchapter that will be organized in the hierarchy under the Main chapter.
+You can even make Links to other chapters like this (1.0). Then the subchapter has a crosslink to that chapter 1.0
+
+What's also supported is: "quotes", all sorts of (Bracked sentences) with [Squared brackets as well]
+
+2.0 Second Main Chapter
+
+Another chapter. Here we can show that NLX also understands:
+Integer numbers: 1 2 3
+English float numbers: 1.254
+German float numbers 1,254
+and even units like 5,5 m and currency 100,00$ and 200€
+This chapter has another Link to the Subchapter (1.1)
+And this is a dead reference (3.34)
+There are also some intrinsic grammar checks implemented. if you start a sentence w.o. capital letter a warning will show up.
+
+Enjoy!
+
+Felix Schaller
+

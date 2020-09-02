@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<de.validas:Process xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:de.validas="http://www.validas.de/spedit/referenceProcess">
+  <requirements name="Introduction" description="Introduction" longDescription="Introduction&#xD;&#xA;&#xD;&#xA;This is a chapterless introduction to demonstrate the model generation of the NLX-Tool &#xD;&#xA; You can put any general Infomation here, even a CONTENT LIST&#xD;&#xA;&#xD;&#xA;CONTENT&#xD;&#xA;&#xD;&#xA;First Main Chapter .......................... Page 1&#xD;&#xA;First Sub Chapter ........................... Page 3&#xD;&#xA;First Sub Sub Chapter ..................... Page 4&#xD;&#xA;Second Main Chapter ......................... Page 5&#xD;&#xA;First Main Chapter&#xD;&#xA;This Paragraph will be rendered into the first Main Capter Node of the Requirement Model. Paragraphs can contain all &#xD;&#xA; Sorts of text like URLs: http://mydomain.com/subdirectory/rest or email.adresses@Emailer.com&#xD;&#xA;&#xD;&#xA;Item 1&#xD;&#xA;Item 2&#xD;&#xA;Item 3&#xD;&#xA;Asf.&#xD;&#xA;It can even hold a list:&#xD;&#xA;(Replaced List Entry with Req: )&#xD;&#xA;(Replaced List Entry with Req: )&#xD;&#xA;(Replaced List Entry with Req: )&#xD;&#xA;(Replaced List Entry with Req: )&#xD;&#xA;&#xD;&#xA;Even bullet lists with indentation are supported&#xD;&#xA;&#xD;&#xA;One point&#xD;&#xA;Second point&#xD;&#xA;(Replaced List Entry with Req: )&#xD;&#xA;(Replaced List Entry with Req: )&#xD;&#xA;&#xD;&#xA;">
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="1"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="3"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="4"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="5"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="2"/>
+  </requirements>
+  <requirements name="First Sub Chapter&#xD;&#xA;" description="Main Chapter" ID="1.1" longDescription="That's the first subchapter that will be organized in the hierarchy under the Main chapter.&#xD;&#xA;You can even make Links to other chapters like this (1.0). Then the subchapter has a crosslink to that chapter 1.0&#xD;&#xA;&#xD;&#xA;What's also supported is: quotes, all sorts of (Bracked sentences) with [Squared brackets as well]&#xD;&#xA;&#xD;&#xA;" requiredByRequirements="//@requirements.2">
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="1.0"/>
+  </requirements>
+  <requirements name="Second Main Chapter&#xD;&#xA;" description="Main Chapter" ID="2.0" longDescription="Another chapter. Here we can show that NLX also understands:&#xD;&#xA;Integer numbers: 1 2 3 &#xD;&#xA; English float numbers: 1.254 &#xD;&#xA; German float numbers 1,254 &#xD;&#xA; and even units like 5,5 m and currency 100,00$ and 200€ &#xD;&#xA; This chapter has another Link to the Subchapter (1.1) &#xD;&#xA; And this is a dead reference (3.34) &#xD;&#xA; There are also some intrinsic grammar checks implemented. if you start a sentence null capital letter a warning will show up.&#xD;&#xA;&#xD;&#xA;Enjoy!&#xD;&#xA;&#xD;&#xA;Felix Schaller&#xD;&#xA;&#xD;&#xA;" requiredRequirements="//@requirements.1">
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="1"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="2"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="3"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="1.254"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="1,254"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="5,5"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="100,00$"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="200€"/>
+    <subRequirements xsi:type="de.validas:RequiredDocument" name="Unresolved dependency" ID="3.34"/>
+  </requirements>
+</de.validas:Process>
