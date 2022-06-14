@@ -8,9 +8,9 @@ be sure only org.antlr.runtime.3.2.0 is selected in the launch configuration
 
 2.) install Neo4j Database and dumb the database under `database\` with
 neo4j-admin dump --database=<database> --to=<destination-path>
-(see Neo4j Documentation: https://neo4j.com/docs/operations-manual/3.5/tools/dump-load/)
+(see Neo4j Documentation: [Neo4j Documentation dump-load](https://neo4j.com/docs/operations-manual/3.5/tools/dump-load/)
   
-3.) import the demo workspace: (resources/demo.project)[https://github.com/validas/NLX/tree/master/resources/demo.project]
+3.) import the demo workspace: [resources/demo.project](https://github.com/validas/NLX/tree/master/resources/demo.project)
 
 4.) enjoy!
 
