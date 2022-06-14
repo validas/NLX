@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Dictionary
+Bundle-SymbolicName: de.validas.nlx.dictionary
+Bundle-Version: 0.2.0.qualifier
+Bundle-Vendor: Validas AG
+Automatic-Module-Name: de.validas.nlx.dictionary
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.xtext.ui,
+ org.eclipse.xtext.xbase.lib,
+ de.validas.nlx.ai;visibility:=reexport,
+ de.validas.utils.Data,
+ org.eclipse.xtext.builder;bundle-version="2.16.0"
+Import-Package: org.apache.log4j;version="1.2.15"
+Export-Package: de.validas.nlx.dictionary,
+ de.validas.nlx.dictionary.constants,
+ de.validas.nlx.dictionary.type,
+ de.validas.nlx.dictionary.type.elements,
+ de.validas.nlx.dictionary.util

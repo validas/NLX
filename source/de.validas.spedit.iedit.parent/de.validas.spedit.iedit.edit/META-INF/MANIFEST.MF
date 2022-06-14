@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: de.validas.spedit.iedit.edit;singleton:=true
+Automatic-Module-Name: de.validas.spedit.iedit.edit
+Bundle-Version: 0.2.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: de.validas.spedit.naturalLang.provider.NaturalLangEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: de.validas.spedit.naturalLang.provider
+Require-Bundle: org.eclipse.core.runtime,
+ de.validas.spedit.iedit;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport,
+ org.eclipse.xtext.xbase.lib
+Bundle-ActivationPolicy: lazy

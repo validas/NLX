@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.validas.nlx.view.fxviews.control.MyFxViewController">
+   <center>
+      <ScrollPane BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" onContextMenuRequested="#onContextMenu">
+               <children>
+                  <HBox fx:id="panelStack" spacing="5.0">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="2000.0">
+              <items>
+                  <Pane prefHeight="80.0" prefWidth="80.0" stylesheets="@Panel.css">
+                     <styleClass>
+                        <String fx:value="panelBlue" />
+                        <String fx:value="tokenPanel" />
+                     </styleClass>
+                  </Pane>
+                  <Pane prefHeight="80.0" prefWidth="80.0" />
+                  <Pane prefHeight="80.0" prefWidth="80.0" />
+              </items>
+            </ToolBar>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

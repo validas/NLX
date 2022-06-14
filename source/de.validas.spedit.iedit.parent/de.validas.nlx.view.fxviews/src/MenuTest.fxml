@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test">
+   <children>
+      <ComboBox fx:id="comboBox" layoutX="33.0" layoutY="80.0" prefWidth="150.0" />
+      <ChoiceBox layoutX="202.0" layoutY="80.0" prefWidth="150.0" />
+      <MenuButton layoutX="33.0" layoutY="152.0" mnemonicParsing="false" text="MenuButton">
+        <items>
+            <Menu mnemonicParsing="false" text="Unspecified Menu" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+        </items>
+      </MenuButton>
+      <SplitMenuButton layoutX="202.0" layoutY="152.0" mnemonicParsing="false" text="SplitMenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </SplitMenuButton>
+   </children>
+</Pane>

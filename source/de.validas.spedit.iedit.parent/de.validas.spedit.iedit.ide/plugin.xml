@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <!-- <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="de.validas.spedit.ide.actions.SaveModelHandler"
+            id="de.validas.spedit.iedit.ide.savemodel"
+            name="Save Model (handler)">
+      </command>
+      
+      <command
+            defaultHandler="de.validas.spedit.ide.actions.SaveModelHandler"
+            id="de.validas.spedit.iedit.ide.savemodeloutline"
+            name="Save Model (outline)">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="de.validas.spedit.iedit.ide.SaveModelAction"
+            objectClass="org.eclipse.core.resources.IResource">
+         <action
+               class="de.validas.spedit.ide.actions.SaveModelAction"
+               id="de.validas.spedit.iedit.ide.savemodel"
+               label="Save Model (action)">
+         </action>
+      </objectContribution>
+      
+      <objectContribution
+            adaptable="false"
+            id="de.validas.spedit.iedit.ide.outlinerSaveModelAction"
+            objectClass="org.eclipse.emf.ecore.EObject">
+         <action
+               class="de.validas.spedit.ide.actions.SaveModelAction"
+               id="de.validas.spedit.iedit.ide.savemodel"
+               label="Save Model (ol)">
+         </action>
+      </objectContribution>
+      
+      
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <menu
+               label="Save Model (addition)">
+            <command
+                  commandId="de.validas.spedit.iedit.ide.savemodel"
+                  label="Save"
+                  style="push">
+               <visibleWhen
+                     checkEnabled="false">
+                  <iterate
+                        ifEmpty="false">
+                        <or>
+                        <instanceof
+                              value="org.eclipse.core.resources.IResource">
+                        </instanceof>
+                        <instanceof
+                              value="org.eclipse.core.resources.IFile">
+                        </instanceof>
+                        </or>
+                  </iterate>
+               </visibleWhen>
+            </command>
+         </menu>
+      </menuContribution>
+      
+      <menuContribution
+        locationURI="menu:org.eclipse.ui.views.ContentOutline">
+     <command
+           commandId="de.validas.spedit.iedit.ide.savemodel"
+           label="Save Model (outline)"
+           style="push">
+     </command>
+  </menuContribution>
+      
+    </extension>-->
+
+</plugin>

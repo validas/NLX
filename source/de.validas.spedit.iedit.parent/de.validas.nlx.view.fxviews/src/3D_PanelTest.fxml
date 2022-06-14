@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.validas.nlx.view.fxviews.control.PanelObjController">
+   <children>
+      <AmbientLight color="DARKGRAY" />
+      <ParallelCamera />
+      <PointLight color="DARKGRAY" lightOn="true" translateZ="400.0" />
+      <StackPane translateZ="500.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <Pane fx:id="panel" onContextMenuRequested="#panelKontextMenue" onDragDetected="#dragPanelStart" onDragDone="#dragPanelEnd" onDragDropped="#dragPanelDropped" onDragEntered="#dragPanelEntered" onDragExited="#dragPanelExited" onDragOver="#dragPanelOver" onMouseClicked="#panelMouseClicked" onMouseDragEntered="#dragPanelMouseEntered" onMouseDragExited="#dragPanelMouseExited" onMouseDragOver="#dragPanelMouseOver" onMouseDragReleased="#dragPanelMouseReleased" onMouseDragged="#dragPanelMouseDragged" onMouseEntered="#panelMouseEntered2" onMouseExited="#panelMouseExited2" onMouseMoved="#panelMouseMoved" onMousePressed="#panelMousePressed" onMouseReleased="#panelMouseReleased" onScroll="#panelMouseScroll" styleClass="tokenPanel" stylesheets="@Panel.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <VBox onContextMenuRequested="#panelKontextMenue" onDragDetected="#dragPanelStart" onDragDone="#dragPanelEnd" onDragDropped="#dragPanelDropped" onDragEntered="#dragPanelEntered" onDragExited="#dragPanelExited" onDragOver="#dragPanelOver" onMouseClicked="#panelMouseClicked" onMouseDragEntered="#dragPanelMouseEntered" onMouseDragExited="#dragPanelMouseExited" onMouseDragOver="#dragPanelMouseOver" onMouseDragReleased="#dragPanelMouseReleased" onMouseDragged="#dragPanelMouseDragged" onMouseEntered="#panelMouseEntered2" onMouseExited="#panelMouseExited2" onMouseMoved="#panelMouseMoved" onMousePressed="#panelMousePressed" onMouseReleased="#panelMouseReleased" onScroll="#panelMouseScroll" pickOnBounds="false">
+               <children>
+                  <AnchorPane mouseTransparent="true" pickOnBounds="false">
+                     <children>
+                        <Label fx:id="label" alignment="TOP_CENTER" contentDisplay="CENTER" text="Node Name" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <HBox>
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <Circle fill="TRANSPARENT" radius="10.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+                                    <Sphere drawMode="LINE" radius="7.7" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+      								<material>
+      								  <PhongMaterial>
+      									  <diffuseColor>
+      										<Color blue="0.9" green="0.6" opacity="1.0" red="0.3" />
+      									  </diffuseColor>
+      									</PhongMaterial>
+      								  </material>
+                                    </Sphere>
+                                 </children>
+                              </AnchorPane>
+                              <ComboBox fx:id="combobox1" prefWidth="150.0">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <Circle fill="TRANSPARENT" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="3.0" />
+                        <Line endX="20.0" endY="13.0" startX="10.0" startY="13.0" strokeWidth="2.0" />
+                        <Line endX="15.0" endY="18.0" startX="15.0" startY="8.0" strokeWidth="2.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

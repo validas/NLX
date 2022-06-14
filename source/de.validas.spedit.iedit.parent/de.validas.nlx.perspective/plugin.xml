@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension id="ide" point="org.eclipse.core.runtime.products"> 
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            description="%productBlurb"
+            name="NLX - Natural Language Platform"> 
+          <!-- For documentation on updating icons, see http://wiki.eclipse.org/Platform-releng/Updating_Branding -->
+          <property name="windowImages" value="nlx16.png,nlx32.png,nlx48.png,nlx64.png,nlx128.png,nlx256.png"/> 
+          <property name="aboutImage" value="nlx_lg.png"/> 
+          <property name="aboutText" value="%productBlurb"/> 
+          <property name="appName" value="NLX - Natural Language Platform"/> 
+         <property
+          		name="introTitle"
+          		value="%productIntroTitle"/>
+          <property
+          		name="introBrandingImage"
+          		value="product:intro-eclipse.png"/>
+          <property
+          		name="introBrandingImageText"
+          		value="%productIntroBrandingText"/>
+		  <property
+				name="introDescription-overview"
+				value="%introDescription-overview"/>
+		  <property
+				name="introDescription-tutorials"
+				value="%introDescription-tutorials"/>
+		  <property
+				name="introDescription-samples"
+				value="%introDescription-samples"/>
+		  <property
+				name="applicationXMI"
+				value="de.validas.nlx.perspective/LegacyIDE.e4xmi">
+		  </property>
+		  <property
+				name="cssTheme"
+				value="org.eclipse.e4.ui.css.theme.e4_default">
+		  </property>
+		  <property
+				name="applicationCSSResources"
+          value="platform:/plugin/org.eclipse.ui.themes/images/">
+		  </property>
+
+          <property
+        		name="startupForegroundColor"
+				value="e6e8ff"/>
+          <property
+                name="startupMessageRect"
+                value="7,265,320,20"/>
+          <property
+                name="startupProgressRect"
+                value="2,290,450,10"/>
+          <property
+                name="buildIdLocation"
+                value="125,245">
+          </property>
+          <property
+                name="buildIdSize"
+                value="293,40">
+          </property>
+          <property
+                name="preferenceCustomization"
+                value="plugin_customization.ini">
+          </property>
+
+      </product> 
+   </extension> 
+   
+   
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="de.validas.nlx.perspective.PerspectiveFactory"
+            fixed="true"
+            id="de.validas.nlx.perspective.perspective1"
+            name="NLX">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="de.validas.nlx.perspective.perspective1">
+            <view
+                  id="org.eclipse.ui.navigator.ProjectExplorer"
+                  minimized="false"
+                  ratio="0.2"
+                  relationship="left"
+                  relative="org.eclipse.ui.editorss"
+                  visible="true">
+            </view>
+ 
+            <view
+                  id="de.validas.nlx.view.fxviews.views.SemanticFxViewPart"
+                  minimized="false"
+                  ratio="0.8"
+                  relationship="bottom"
+                  relative="org.eclipse.ui.editorss"
+                  visible="true">
+            </view>
+            <view
+                  id="org.eclipse.ui.views.PropertySheet"
+                  minimized="false"
+                  ratio="0.8"
+                  relationship="right"
+                  relative="org.eclipse.ui.editorss"
+                  showTitle="true"
+                  visible="true">
+            </view>
+            <view
+                  id="org.eclipse.ui.views.ContentOutline"
+                  minimized="false"
+                  ratio="0.8"
+                  relationship="bottom"
+                  relative="org.eclipse.ui.navigator.ProjectExplorer"
+                  visible="true">
+            </view>
+            <view
+                  id="org.eclipse.ui.console.ConsoleView"
+                  minimized="false"
+                  relationship="stack"
+                  relative="de.validas.nlx.view.fxviews.views.SemanticFxViewPart">
+            </view>
+            <view
+                  id="org.eclipse.ui.views.ProgressView"
+                  minimized="false"
+                  ratio="0.2"
+                  relationship="stack"
+                  relative="org.eclipse.ui.console.ConsoleView">
+            </view>
+ 
+      </perspectiveExtension>
+   </extension>
+   
+<!--   <extension point="org.eclipse.ui.views">
+      <category
+            id="de.validas.nlx.views.viewCategory"
+            name="%views.viewCategory.name">
+      </category>
+      <view
+            category="de.validas.nlx.views.viewCategory"
+            class="de.validas.nlx.view.InfoView"
+            id="de.validas.nlx.view"
+            name="%views.view.name">
+      </view>
+</extension>-->
+   
+   
+ 
+</plugin>

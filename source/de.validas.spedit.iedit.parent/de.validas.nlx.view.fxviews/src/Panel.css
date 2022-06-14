@@ -1,0 +1,110 @@
+.tokenPanel {
+   -fx-background-color: #F0F0F0; 
+   -fx-background-radius: 10; 
+   -fx-border-color: #AACCFF; 
+   -fx-border-width: 2; 
+   -fx-border-radius: 10;
+   -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 5, 5);
+}
+
+.innerPanel {
+   -fx-background-color: #D0D0D0; 
+   -fx-background-radius: 10; 
+   -fx-border-width: 0; 
+   -fx-border-radius: 10;
+   -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 2, 2);
+}
+
+.link {
+   -fx-stroke: #000000; 
+}
+
+.link:hover {
+   -fx-stroke: #00C0F0;
+   -fx-stroke-width: 4; 
+}
+
+.lowLink {
+   -fx-stroke: #B0B0B0; 
+}
+
+.disabled {
+   -fx-stroke: #E09090; 
+   -fx-stroke-dash-array: 2 10; 
+}
+
+.disabled:hover {
+   -fx-stroke: #E09090; 
+   -fx-stroke-dash-array: 1 10;
+   -fx-stroke-width: 4;
+}
+
+.dashed { 
+   -fx-stroke-dash-array: 1 6; 
+}
+
+.dashed:hover { 
+   -fx-stroke-dash-array: 1 10; 
+}
+
+.lowLink:hover {
+   -fx-stroke: #00C0F0;
+   -fx-stroke-width: 4; 
+}
+
+/*.tokenPanel:mouse-over {
+    -fx-background-color: #C0D0F0 ;
+} */
+
+.tokenPanel:hover {
+    -fx-background-color: #C0D0F0 ;
+}
+
+.panelGreen {
+   -fx-background-color: #A0FFA0; 
+}
+
+.panelGreen:hover {
+    -fx-background-color: #D0FF80; 
+}
+
+.panelDRed {
+   -fx-background-color: #C04040; 
+}
+
+.panelDRed:hover {
+    -fx-background-color: #FF8080; 
+}
+
+.panelLRed {
+   -fx-background-color: #F08080; 
+}
+
+.panelLRed:hover {
+    -fx-background-color: #FFC0C0; 
+}
+
+.panelBlue {
+   -fx-background-color: #4080F0; 
+}
+
+.panelBlue:hover {
+    -fx-background-color: #80A0FF; 
+}
+
+.panelYellow {
+   -fx-background-color: #FFD440; 
+}
+
+.panelYellow:hover {
+    -fx-background-color: #FFF080; 
+}
+
+
+.plusIcon {
+   -fx-fill: #FFFFFF00; 
+}
+
+.plusIcon:hover {
+    -fx-fill: #50A0FF ;
+}

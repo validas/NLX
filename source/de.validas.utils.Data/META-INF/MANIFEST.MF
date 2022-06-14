@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Data-Handling
+Bundle-SymbolicName: de.validas.utils.Data;singleton:=true
+Bundle-Version: 0.2.0.qualifier
+Bundle-Activator: de.validas.utils.data.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.google.guava
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: de.validas.utils.Data
+Bundle-Vendor: Validas AG
+Export-Package: de.validas.utils.data,
+ de.validas.utils.data.lists,
+ de.validas.utils.data.types,
+ de.validas.utils.data.util

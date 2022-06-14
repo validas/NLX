@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuButton layoutX="101.0" layoutY="102.0" mnemonicParsing="false" text="MenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false">
+               <graphic>
+                  <TreeView prefHeight="200.0" prefWidth="200.0" />
+               </graphic>
+            </MenuItem>
+        </items>
+      </MenuButton>
+      <SplitMenuButton layoutX="207.0" layoutY="217.0" mnemonicParsing="false" text="SplitMenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" text="noun" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+          <MenuItem mnemonicParsing="false" text="verb" />
+            <RadioMenuItem mnemonicParsing="false" text="Unspecified Action" />
+            <RadioMenuItem mnemonicParsing="false" text="Unspecified Action" />
+            <CheckMenuItem mnemonicParsing="false" text="Unspecified Action" />
+        </items>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </SplitMenuButton>
+      <RadioButton layoutX="35.0" layoutY="152.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton layoutX="35.0" layoutY="179.0" mnemonicParsing="false" text="RadioButton" />
+      <TreeTableView layoutX="376.0" layoutY="6.0" prefHeight="385.0" prefWidth="219.0">
+        <columns>
+          <TreeTableColumn prefWidth="124.0" text="C1" />
+          <TreeTableColumn prefWidth="71.0" text="C2" />
+        </columns>
+      </TreeTableView>
+   </children>
+</Pane>

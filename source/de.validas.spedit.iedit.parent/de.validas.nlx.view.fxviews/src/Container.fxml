@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.validas.nlx.view.fxviews.control.ContainerController">
+	<children>
+		<StackPane>
+			<children>
+				<AnchorPane>
+					<children>
+						<Pane fx:id="panel" onContextMenuRequested="#panelKontextMenue" onDragDetected="#dragPanelStart" onDragDone="#dragPanelEnd" onDragDropped="#dragPanelDropped" onDragEntered="#dragPanelEntered" onDragExited="#dragPanelExited" onDragOver="#dragPanelOver" onMouseClicked="#panelMouseClicked" onMouseDragEntered="#dragPanelMouseEntered" onMouseDragExited="#dragPanelMouseExited" onMouseDragOver="#dragPanelMouseOver" onMouseDragReleased="#dragPanelMouseReleased" onMouseDragged="#dragPanelMouseDragged" onMouseEntered="#panelMouseEntered2" onMouseExited="#panelMouseExited2" onMouseMoved="#panelMouseMoved" onMousePressed="#panelMousePressed" onMouseReleased="#panelMouseReleased" onScroll="#panelMouseScroll" styleClass="tokenPanel" stylesheets="@Panel.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+						</Pane>
+					</children>
+				</AnchorPane>
+				<VBox onContextMenuRequested="#panelKontextMenue" onDragDetected="#dragPanelStart" onDragDone="#dragPanelEnd" onDragDropped="#dragPanelDropped" onDragEntered="#dragPanelEntered" onDragExited="#dragPanelExited" onDragOver="#dragPanelOver" onMouseClicked="#panelMouseClicked" onMouseDragEntered="#dragPanelMouseEntered" onMouseDragExited="#dragPanelMouseExited" onMouseDragOver="#dragPanelMouseOver" onMouseDragReleased="#dragPanelMouseReleased" onMouseDragged="#dragPanelMouseDragged" onMouseEntered="#panelMouseEntered2" onMouseExited="#panelMouseExited2" onMouseMoved="#panelMouseMoved" onMousePressed="#panelMousePressed" onMouseReleased="#panelMouseReleased" onScroll="#panelMouseScroll" pickOnBounds="false">
+					<children>
+						<Accordion>
+							<panes>
+								<TitledPane fx:id="title" text="untitled 1" textOverrun="CLIP">
+									<opaqueInsets>
+										<Insets />
+									</opaqueInsets>
+                           <content>
+                              <StackPane pickOnBounds="false">
+                                 <children>
+                                    <Pane fx:id="linkPane" pickOnBounds="false" stylesheets="@Panel.css" />
+      								<HBox fx:id="layoutSpace" pickOnBounds="false" />
+                                 </children>
+                              </StackPane>
+                           </content>
+								</TitledPane>
+							</panes>
+							<VBox.margin>
+								<Insets top="5.0" />
+							</VBox.margin>
+						</Accordion>             
+					</children>
+					<StackPane.margin>
+						<Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+					</StackPane.margin>
+				</VBox>
+			</children>
+		</StackPane>
+	</children>
+</AnchorPane>

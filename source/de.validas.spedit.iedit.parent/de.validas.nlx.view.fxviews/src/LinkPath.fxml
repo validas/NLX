@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.*?>
+
+<Path id="path" fx:id="path" onContextMenuRequested="#onContextMenu" onDragDetected="#onDragStart" onDragDone="#onDragAfter" onDragDropped="#onDragEnd" onDragOver="#onDragOver" onMouseClicked="#onMouseClicked" onMouseEntered="#onHoverStart" onMouseExited="#onHoverEnd" strokeType="INSIDE" strokeWidth="2.0" styleClass="link" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.validas.nlx.view.fxviews.control.LinkPathController">
+   <elements>
+	  <MoveTo />
+	  <VLineTo y="10.0" />
+	  <ArcTo radiusX="10.0" radiusY="10.0" x="10.0" y="20.0" />
+	  <HLineTo x="100.0" />
+	  <ArcTo radiusX="10.0" radiusY="10.0" x="110.0" y="10.0" />
+	  <VLineTo />
+   </elements>
+</Path>

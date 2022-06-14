@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="de.validas.nlx.view.fxviews.control.ComboElementController">
+	<children>
+		<HBox>
+			<children>
+				<AnchorPane>
+					<children>
+						<Circle fx:id="button" fill="TRANSPARENT" radius="10.0"
+							stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="5.0"
+							AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"
+							AnchorPane.topAnchor="5.0" />
+						<Sphere fx:id="sphere" drawMode="LINE" radius="7.7"
+							AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0"
+							AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+							<material>
+								<PhongMaterial fx:id="materialPhong" >
+									<specularColor>
+										<Color blue="0.1" green="0.1" opacity="1.0" red="0.1" />
+									</specularColor>
+									<diffuseColor>
+										<Color blue="0.9" green="0.6" opacity="1.0" red="0.3" />
+									</diffuseColor>
+								</PhongMaterial>
+							</material>
+						</Sphere>
+					</children>
+				</AnchorPane>
+				<ComboBox fx:id="combobox" prefWidth="150.0">
+					<HBox.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" />
+					</HBox.margin>
+				</ComboBox>
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.validas.nlx.view.fxviews.control.PanelObjExtController">
+   <children>
+      <StackPane pickOnBounds="false">
+         <children>
+            <AnchorPane pickOnBounds="false">
+               <children>
+                  <Pane fx:id="panel" onContextMenuRequested="#panelKontextMenue" onDragDetected="#dragPanelStart" onDragDone="#dragPanelEnd" onDragDropped="#dragPanelDropped" onDragEntered="#dragPanelEntered" onDragExited="#dragPanelExited" onDragOver="#dragPanelOver" onMouseClicked="#panelMouseClicked" onMouseDragEntered="#dragPanelMouseEntered" onMouseDragExited="#dragPanelMouseExited" onMouseDragOver="#dragPanelMouseOver" onMouseDragReleased="#dragPanelMouseReleased" onMouseDragged="#dragPanelMouseDragged" onMouseEntered="#panelMouseEntered2" onMouseExited="#panelMouseExited2" onMouseMoved="#panelMouseMoved" onMousePressed="#panelMousePressed" onMouseReleased="#panelMouseReleased" onScroll="#panelMouseScroll" styleClass="tokenPanel" stylesheets="@Panel.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <VBox pickOnBounds="false">
+               <children>
+                  <AnchorPane mouseTransparent="true" pickOnBounds="false">
+                     <children>
+                        <Label fx:id="label" alignment="TOP_CENTER" contentDisplay="CENTER" text="Node Name" textAlignment="CENTER" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <VBox fx:id="typeContainer" pickOnBounds="false" />
+                  <AnchorPane pickOnBounds="false" stylesheets="@Panel.css">
+                     <children>
+                        <Circle fx:id="plusIcon" fill="#7c77ff8c" onMouseClicked="#circleClicked" onMousePressed="#circleClicked" pickOnBounds="true" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" styleClass="plusIcon" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="3.0" />
+                        <Line endX="20.0" endY="13.0" mouseTransparent="true" startX="10.0" startY="13.0" strokeWidth="2.0" />
+                        <Line endX="15.0" endY="18.0" mouseTransparent="true" startX="15.0" startY="8.0" strokeWidth="2.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <Pane styleClass="innerPanel" stylesheets="@Panel.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane blendMode="DARKEN" layoutX="5.0" layoutY="5.0">
+                                 <padding>
+                                    <Insets left="5.0" top="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Accordion scaleShape="false">
+                                      <panes>
+                                          <TitledPane fx:id="accordionIN" text="Attributes IN" visible="false">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                   <children>
+                                                      <VBox id="attribVBox" fx:id="attribVBoxIN" spacing="5.0">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                   </padding>
+                                                </AnchorPane>
+                                             </content>
+                                          </TitledPane>
+                                        <TitledPane fx:id="accordionOUT" text="Attributes OUT" visible="false">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                   <children>
+                                                      <VBox id="attribVBox" fx:id="attribVBoxOUT" spacing="5.0">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                                   </padding>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                      </panes>
+                                    </Accordion>
+                                 </children>
+                              </AnchorPane>
+                           </children></Pane>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

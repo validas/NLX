@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: de.validas.spedit.iedit.web
+Bundle-ManifestVersion: 2
+Bundle-Name: de.validas.spedit.iedit
+Bundle-Vendor: My Company
+Bundle-Version: 0.1.5.qualifier
+Bundle-SymbolicName: de.validas.spedit.iedit.web; singleton:=true
+Bundle-ActivationPolicy: lazy

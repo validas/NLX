@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.validas.nlx.view.fxviews.control.SemanticFxViewController">
+   <children>
+		<GridPane alignment="BOTTOM_CENTER" gridLinesVisible="true" style="-fx-border-color: #0000FF;">
+			<columnConstraints>
+				<ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="90.0" minHeight="80.0" prefHeight="90.0" valignment="TOP" vgrow="NEVER" />
+				<RowConstraints vgrow="ALWAYS" />
+			</rowConstraints>
+			<children>
+				<ToolBar maxHeight="80.0" minHeight="-Infinity" prefHeight="90.0">
+					<items>
+						<Pane prefHeight="80.0" prefWidth="80.0" stylesheets="@Panel.css">
+							<styleClass>
+								<String fx:value="panelBlue" />
+								<String fx:value="tokenPanel" />
+							</styleClass>
+						</Pane>
+						<Pane prefHeight="80.0" prefWidth="80.0" styleClass="tokenPanel" stylesheets="@Panel.css" />
+						<Pane prefHeight="80.0" prefWidth="80.0" styleClass="tokenPanel" stylesheets="@Panel.css" />
+					</items>
+				</ToolBar>
+				<ScrollPane fx:id="scrollpane" hbarPolicy="ALWAYS" nodeOrientation="LEFT_TO_RIGHT" onContextMenuRequested="#onContextMenu" onDragOver="#sceneDragOver" onMouseDragOver="#sceneMouseDragOver" onMouseDragReleased="#sceneDragReleased" pannable="true" vbarPolicy="ALWAYS" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+					<content>
+						<AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" onContextMenuRequested="#onContextMenu">
+							<children>
+								<AmbientLight color="DARKGRAY" />
+								<PointLight color="DARKGRAY" lightOn="true" />	
+								<VBox fx:id="vBox" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+									<children>
+		                        <Pane>
+		                           <children>
+		                              <StackPane>
+		                                 <children>
+		            								<HBox spacing="5.0">
+		            									<children>
+		            										<Sphere radius="15.0">
+		            											<material>
+		            												<PhongMaterial>
+		            													<diffuseColor>
+		            														<Color blue="0.9" green="0.6" opacity="1.0" red="0.3" />
+		            													</diffuseColor>
+		            												</PhongMaterial>
+		            											</material>
+		            										</Sphere>
+		            										<ChoiceBox id="choiceBox" fx:id="choiceBox" minWidth="130.0" prefWidth="150.0" />
+		            										<ComboBox id="comboBox" fx:id="comboBox" minWidth="120.0" prefWidth="150.0" />
+		            										<Button id="button" fx:id="button" minWidth="-Infinity" mnemonicParsing="false" onContextMenuRequested="#contextMenuButton" onDragDropped="#dragButtonDropped" onDragOver="#buttonDragOver" onMouseDragOver="#mouseButtonDragOver" text="Button" />
+		            									</children>
+		            								</HBox>
+		                                    <AnchorPane>
+		                                       <children>
+		                  								<Path id="path" fx:id="path" layoutX="150.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+		                  									<elements>
+		                  										<MoveTo />
+		                  										<VLineTo y="10.0" />
+		                  										<ArcTo radiusX="10.0" radiusY="10.0" x="10.0" y="20.0" />
+		                  										<HLineTo x="100.0" />
+		                  										<ArcTo radiusX="10.0" radiusY="10.0" x="110.0" y="10.0" />
+		                  										<VLineTo />
+		                  									</elements>
+		                  								</Path>
+		                                       </children>
+		                                    </AnchorPane>
+		                                 </children>
+		                              </StackPane>
+		                           </children>
+		                        </Pane>
+		                        <StackPane pickOnBounds="false">
+		                           <children>
+		      								<Pane fx:id="linkPane" pickOnBounds="false" stylesheets="@Panel.css" />
+		      								<HBox fx:id="panelStack" pickOnBounds="false" spacing="5.0">
+		      									<padding>
+		      										<Insets bottom="5.0" top="5.0" />
+		      									</padding>
+		      								</HBox>
+		                           </children>
+		                        </StackPane>
+									</children>
+								</VBox>
+							</children>
+						</AnchorPane>
+					</content>
+				</ScrollPane>
+			</children>
+		</GridPane>
+		<Pane fx:id="overlayPane" style="-fx-background-color: #444444AA;" visible="false" StackPane.alignment="CENTER">
+         <children>
+            <AnchorPane />
+            <BorderPane minHeight="-Infinity" minWidth="-Infinity">
+               <bottom>
+                  <Pane BorderPane.alignment="CENTER" />
+               </bottom>
+               <right>
+                  <Pane BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <Pane BorderPane.alignment="CENTER" />
+               </left>
+               <top>
+                  <Pane BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+            <GridPane alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" percentWidth="45.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" percentWidth="45.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints percentHeight="45.0" valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+                <RowConstraints percentHeight="45.0" valignment="CENTER" vgrow="ALWAYS" />
+              </rowConstraints>
+               <children>
+                  <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ProgressIndicator fx:id="indicator" progress="0.0" scaleShape="false">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </ProgressIndicator>
+                        <Label fx:id="statusMessage" text="Status Message" />
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </Pane>
+   </children>
+</StackPane>

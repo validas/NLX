@@ -1,0 +1,10 @@
+.settings/
+*.aird
+*.ecore
+*.genmodel
+target/
+*._trace
+*.xtendbin
+bin/
+*.mwe2
+*.xtext

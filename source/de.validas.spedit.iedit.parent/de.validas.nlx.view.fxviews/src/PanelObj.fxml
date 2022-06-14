@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.validas.nlx.view.fxviews.control.PanelObjController">
+   <children>
+      <StackPane>
+         <children>
+            <AnchorPane>
+               <children>
+                  <Pane fx:id="panel" onContextMenuRequested="#panelKontextMenue" onDragDetected="#dragPanelStart" onDragDone="#dragPanelEnd" onDragDropped="#dragPanelDropped" onDragEntered="#dragPanelEntered" onDragExited="#dragPanelExited" onDragOver="#dragPanelOver" onMouseClicked="#panelMouseClicked" onMouseDragEntered="#dragPanelMouseEntered" onMouseDragExited="#dragPanelMouseExited" onMouseDragOver="#dragPanelMouseOver" onMouseDragReleased="#dragPanelMouseReleased" onMouseDragged="#dragPanelMouseDragged" onMouseEntered="#panelMouseEntered2" onMouseExited="#panelMouseExited2" onMouseMoved="#panelMouseMoved" onMousePressed="#panelMousePressed" onMouseReleased="#panelMouseReleased" onScroll="#panelMouseScroll" styleClass="tokenPanel" stylesheets="@Panel.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <VBox onContextMenuRequested="#panelKontextMenue" onDragDetected="#dragPanelStart" onDragDone="#dragPanelEnd" onDragDropped="#dragPanelDropped" onDragEntered="#dragPanelEntered" onDragExited="#dragPanelExited" onDragOver="#dragPanelOver" onMouseClicked="#panelMouseClicked" onMouseDragEntered="#dragPanelMouseEntered" onMouseDragExited="#dragPanelMouseExited" onMouseDragOver="#dragPanelMouseOver" onMouseDragReleased="#dragPanelMouseReleased" onMouseDragged="#dragPanelMouseDragged" onMouseEntered="#panelMouseEntered2" onMouseExited="#panelMouseExited2" onMouseMoved="#panelMouseMoved" onMousePressed="#panelMousePressed" onMouseReleased="#panelMouseReleased" onScroll="#panelMouseScroll" pickOnBounds="false">
+               <children>
+                  <AnchorPane mouseTransparent="true" pickOnBounds="false">
+                     <children>
+                        <Label fx:id="label" alignment="TOP_CENTER" contentDisplay="CENTER" text="Node Name" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="5.0">
+                           <padding>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <ComboBox fx:id="combobox" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

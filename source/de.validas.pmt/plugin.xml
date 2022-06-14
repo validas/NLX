@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated referenceModel -->
+      <package
+            uri="http://www.validas.de/spedit/metaModel"
+            class="metaModel.MetaModelPackage"
+            genModel="model/referenceModel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated referenceModel -->
+      <package
+            uri="http://www.validas.de/spedit/superType"
+            class="metaModel.suptertype.SuptertypePackage"
+            genModel="model/referenceModel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated referenceModel -->
+      <package
+            uri="http://www.validas.de/spedit/referenceProcess"
+            class="metaModel.referenceProcess.ReferenceProcessPackage"
+            genModel="model/referenceModel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated referenceModel -->
+      <package
+            uri="http://www.validas.de/spedit/modellDescr"
+            class="metaModel.modellDescr.ModellDescrPackage"
+            genModel="model/referenceModel.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated referenceModel -->
+      <package
+            uri="http://www.validas.de/spedit/terms"
+            class="metaModel.terms.TermsPackage"
+            genModel="model/referenceModel.genmodel"/>
+   </extension>
+
+</plugin>
