@@ -41,7 +41,7 @@ You can import a demo project to see the tool in operation. [Link & Documentatio
 ---
 ## Releases / Downloads
 
-Go to Releases: [DOWNLOAD](https://github.com/validas/NLX/releases>)
+Go to Releases: [DOWNLOAD](https://github.com/validas/NLX/releases)
 
 ---
 ![Poster](https://raw.githubusercontent.com/validas/NLX/master/img/Preview.jpg)
