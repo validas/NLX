@@ -1,9 +1,17 @@
-# Coming soon...
+# Source Code of NLX
 
-source code is currently managed under other repositories but very soon they will be released here...
-thanks for your patience.
+Install Instructions: 
+1.) to run the code import all projects into eclipse as plugin projects
+skip all plugin projects wich ends with `.test`
+create a new launch configuration from NLX.product
+be sure only org.antlr.runtime.3.2.0 is selected in the launch configuration
 
-meanwhile go to the download section to download releases:
-[DOWNLOAD](https://github.com/validas/NLX/releases>)
+2.) install Neo4j Database and dumb the database under `database\` with
+neo4j-admin dump --database=<database> --to=<destination-path>
+(see Neo4j Documentation: https://neo4j.com/docs/operations-manual/3.5/tools/dump-load/)
+  
+3.) import the demo workspace:  
+
+4.) enjoy!
 
 - Felix Schaller
